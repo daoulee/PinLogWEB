@@ -73,7 +73,7 @@ nav.scrolled {
 .nav-links { display:flex; gap:32px; list-style:none; }
 .nav-links a {
   color: rgba(255,255,255,0.45); text-decoration:none;
-  font-size:13px; font-weight:500; letter-spacing:-0.1px;
+  font-size:15px; font-weight:500; letter-spacing:-0.1px;
   transition: color 0.2s;
 }
 .nav-links a:hover { color:#fff; }
@@ -129,7 +129,7 @@ nav.scrolled {
 }
 .hero-eyebrow {
   display:inline-flex; align-items:center; gap:12px;
-  font-size:10px; font-weight:700; letter-spacing:5px; text-transform:uppercase;
+  font-size:12px; font-weight:700; letter-spacing:4px; text-transform:uppercase;
   color: rgba(192,132,252,0.85);
   margin-bottom:28px;
   opacity:0; animation: fadeUp 1s var(--ease-out) 0.2s forwards;
@@ -139,7 +139,7 @@ nav.scrolled {
   background: rgba(192,132,252,0.4);
 }
 .hero-title {
-  font-size: clamp(56px, 5vw, 92px);
+  font-size: clamp(72px, 8vw, 130px);
   font-weight: 900;
   letter-spacing: -2px;
   line-height: 1;
@@ -150,7 +150,7 @@ nav.scrolled {
 }
 .hero-subtitle {
   margin-top:28px;
-  font-size: clamp(16px, 2vw, 22px);
+  font-size: clamp(18px, 2.2vw, 28px);
   font-weight:300; line-height:1.65;
   color: rgba(255,255,255,0.6); letter-spacing:-0.1px;
   opacity:0; animation: fadeUp 1s var(--ease-out) 0.6s forwards;
@@ -161,9 +161,9 @@ nav.scrolled {
 }
 .btn-primary {
   display:inline-flex; align-items:center; gap:7px;
-  padding:14px 34px; border-radius:50px;
+  padding:16px 40px; border-radius:50px;
   background: linear-gradient(135deg, var(--c-violet-d), var(--c-blue-d));
-  font-size:14px; font-weight:600; color:#fff; text-decoration:none;
+  font-size:16px; font-weight:600; color:#fff; text-decoration:none;
   letter-spacing:-0.2px;
   box-shadow: 0 0 0 1px rgba(139,92,246,0.5), 0 8px 40px rgba(109,40,217,0.4);
   transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
@@ -174,10 +174,10 @@ nav.scrolled {
 }
 .btn-outline {
   display:inline-flex; align-items:center; gap:7px;
-  padding:14px 34px; border-radius:50px;
+  padding:16px 40px; border-radius:50px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.14);
-  font-size:14px; font-weight:600; color:rgba(255,255,255,0.8); text-decoration:none;
+  font-size:16px; font-weight:600; color:rgba(255,255,255,0.8); text-decoration:none;
   letter-spacing:-0.2px; backdrop-filter:blur(12px);
   transition: background 0.3s, border-color 0.3s, transform 0.3s var(--ease-out);
 }
@@ -220,7 +220,7 @@ nav.scrolled {
   color:var(--c-violet); margin-bottom:28px;
 }
 .statement-text {
-  font-size: clamp(28px, 4vw, 52px);
+  font-size: clamp(34px, 5vw, 64px);
   font-weight:700; letter-spacing:-1.5px; line-height:1.25;
   color:rgba(255,255,255,0.88);
 }
@@ -258,24 +258,24 @@ nav.scrolled {
 }
 .how-step:hover::before { opacity:1; }
 .step-num {
-  font-size:11px; font-weight:700; letter-spacing:4px;
+  font-size:12px; font-weight:700; letter-spacing:4px;
   color:var(--c-violet); margin-bottom:24px;
 }
-.step-icon { font-size:40px; margin-bottom:20px; }
-.step-title { font-size:22px; font-weight:700; letter-spacing:-0.6px; margin-bottom:12px; }
-.step-desc { font-size:14px; color:var(--c-text-dim); line-height:1.75; }
+.step-icon { font-size:48px; margin-bottom:20px; }
+.step-title { font-size:26px; font-weight:700; letter-spacing:-0.6px; margin-bottom:12px; }
+.step-desc { font-size:16px; color:var(--c-text-dim); line-height:1.75; }
 
 /* ── SECTION COMMON ── */
 .sec-label {
-  font-size:10px; font-weight:700; letter-spacing:5px; text-transform:uppercase;
+  font-size:12px; font-weight:700; letter-spacing:4px; text-transform:uppercase;
   color:var(--c-violet); margin-bottom:18px;
 }
 .sec-title {
-  font-size: clamp(36px, 4.5vw, 62px);
+  font-size: clamp(44px, 5.5vw, 76px);
   font-weight:800; letter-spacing:-2px; line-height:1.05;
 }
 .sec-body {
-  font-size:16px; line-height:1.85;
+  font-size:18px; line-height:1.85;
   color:var(--c-text-dim); font-weight:300;
 }
 
@@ -434,12 +434,12 @@ nav.scrolled {
 .feat-cell:hover::before { opacity:1; }
 .feat-cell:hover::after  { opacity:1; }
 .feat-icon {
-  font-size:34px; margin-bottom:20px; display:block;
+  font-size:42px; margin-bottom:20px; display:block;
   transition:transform 0.4s var(--ease-spring);
 }
 .feat-cell:hover .feat-icon { transform:scale(1.2) translateY(-4px); }
-.feat-name { font-size:20px; font-weight:700; letter-spacing:-0.5px; margin-bottom:10px; }
-.feat-desc { font-size:13.5px; color:var(--c-text-dim); line-height:1.75; }
+.feat-name { font-size:22px; font-weight:700; letter-spacing:-0.5px; margin-bottom:10px; }
+.feat-desc { font-size:15px; color:var(--c-text-dim); line-height:1.75; }
 
 /* ── EMOTION SPOTLIGHT ── */
 .emotion-section {
@@ -700,7 +700,7 @@ footer {
   display: flex; align-items: center; justify-content: center;
 }
 .showcase-phone-wrap {
-  width: 238px;
+  width: 340px;
   filter:
     drop-shadow(0 40px 80px rgba(0,0,0,0.75))
     drop-shadow(0 0 60px rgba(109,40,217,0.22));
@@ -726,17 +726,17 @@ footer {
 }
 .s-slide.s-active { opacity: 1; transform: translateY(0); }
 .s-label {
-  font-size: 10px; font-weight: 700; letter-spacing: 5px;
+  font-size: 12px; font-weight: 700; letter-spacing: 4px;
   text-transform: uppercase; color: var(--c-violet); margin-bottom: 22px;
 }
 .s-title {
-  font-size: clamp(32px, 3.4vw, 52px);
+  font-size: clamp(38px, 4.2vw, 62px);
   font-weight: 800; letter-spacing: -1.8px; line-height: 1.07;
   margin-bottom: 20px;
 }
 .s-body {
-  font-size: 15px; line-height: 1.85;
-  color: var(--c-text-dim); font-weight: 300; max-width: 400px;
+  font-size: 17px; line-height: 1.85;
+  color: var(--c-text-dim); font-weight: 300; max-width: 440px;
 }
 .s-tags { display: flex; gap: 8px; margin-top: 26px; flex-wrap: wrap; }
 .s-tag {
@@ -832,7 +832,7 @@ footer {
 @media (max-width:960px) {
   .showcase-section { flex-direction: column; }
   .showcase-sticky-col { position: relative; width: 100%; height: auto; padding: 60px 24px 0; }
-  .showcase-phone-wrap { width: 180px; margin: 0 auto; }
+  .showcase-phone-wrap { width: 240px; margin: 0 auto; }
   .s-slide { min-height: auto; padding: 48px 24px; opacity: 1 !important; transform: none !important; }
   nav { padding:16px 20px; }
   .nav-links { display:none; }
