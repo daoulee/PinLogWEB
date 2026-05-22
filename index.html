@@ -28,7 +28,26 @@
       <li><a href="#features">기능</a></li>
       <li><a href="#collection">컬렉션</a></li>
     </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- ── MOBILE MENU OVERLAY ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mm-bg"></div>
+    <nav class="mm-nav">
+      <a href="#how"        class="mm-link" data-i="0">사용법</a>
+      <a href="#showcase"   class="mm-link" data-i="1">화면</a>
+      <a href="#features"   class="mm-link" data-i="2">기능</a>
+      <a href="#collection" class="mm-link" data-i="3">컬렉션</a>
+    </nav>
+    <div class="mm-footer">
+      <span class="stack-chip">Flutter</span>
+      <span class="stack-chip">Mapbox</span>
+      <span class="stack-chip">Riverpod</span>
+    </div>
+  </div>
 
   <!-- ── HERO ── -->
   <section class="hero">
@@ -44,7 +63,7 @@
       </p>
       <div class="hero-actions">
         <a href="#how" class="btn-primary">시작하기 →</a>
-        <a href="#memories" class="btn-outline">기억 보기</a>
+        <a href="#showcase" class="btn-outline">화면 보기</a>
       </div>
     </div>
     <div class="scroll-cue">

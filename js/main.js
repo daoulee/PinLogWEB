@@ -88,6 +88,28 @@ if (sPhoneImg && sSlides.length) {
   updateShowcase();
 }
 
+// ── HAMBURGER MENU ──
+const hamburger  = document.getElementById('navHamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mmLinks    = document.querySelectorAll('.mm-link');
+
+function openMenu() {
+  hamburger.classList.add('open');
+  mobileMenu.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.contains('open') ? closeMenu() : openMenu();
+});
+mmLinks.forEach(link => link.addEventListener('click', closeMenu));
+mobileMenu.querySelector('.mm-bg').addEventListener('click', closeMenu);
+
 // ── GALLERY DRAG SCROLL ──
 const track = document.getElementById('galleryTrack');
 let drag = false, sx = 0, sl = 0;
